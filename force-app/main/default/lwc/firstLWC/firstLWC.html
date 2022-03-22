@@ -1,0 +1,56 @@
+<template>
+    <lightning-card>
+        <div slot="title">
+            <h3>
+                <lightning-icon icon-name="standard:contact" size="small"></lightning-icon> Wprowadź uczestnika i wydarzenie.
+            </h3>
+        </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="First Name"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="Event Name"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="Last Name"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input type="date" label="Event Date"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input type="date" label="Birth Date" onchange={newdateVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="Location"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="E-mail"></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                  <lightning-input label="Description" ></lightning-input>
+                </div>
+            </div>
+        </div>
+        Age is {age}
+        <div slot="footer">
+            <lightning-button label="Add" variant="brand" onclick={insertForm}></lightning-button>        
+          </div>
+    </lightning-card>
+    
+</template>
